@@ -30,16 +30,30 @@ header {
    flex-direction: column;
    text-align: center;
    align-items: center;
-   margin: auto;
 }
 
 header > img {
    width: 10em;
    height: 10em;
-   margin: 20px auto;
+   margin-left: 6rem;
    border-radius:100%;
    border: 1px solid #fff;
    box-shadow: 0px 2px 8px 0px;
+}
+@media (max-width: 600px) {
+   header > img {
+      margin: 2rem  auto;
+   }
+   header > h1 {
+      margin: auto;
+   }
+   ul {
+   margin: auto;
+   padding: 1rem;
+   }
+   ul > li {
+    width: 20em;
+   }
 }
 
 header > h1 {
@@ -50,6 +64,7 @@ header > h1 {
    border-radius: 1em;
    background-color: #000;
    padding: 1.1em 0.6em;
+   text-align: center;
    backdrop-filter: blur(10px) saturate(160%) contrast(180%);
    -webkit-backdrop-filter: blur(10px) saturate(160%) contrast(180);
 }
